@@ -1,195 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IWB - Electronic Recycling</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        /* Header Section */
-        .header {
-            background: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid #E9F1FA;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo {
-            width: 150px;
-            height: 150px;
-            margin-right: 20px;
-        }
-
-        /* Banner Section */
-        .banner {
-            background: linear-gradient(135deg, #00ABE4 0%, #E9F1FA 100%);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 20px;
-        }
-
-        .banner a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        /* Main Content Container */
-        .main-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Sections */
-        #services, #contact, #stakeholders {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            margin: 20px 0;
-            padding: 30px;
-        }
-
-        h2 {
-            color: #00ABE4;
-            border-bottom: 3px solid #E9F1FA;
-            padding-bottom: 10px;
-        }
-
-        /* Social Media Links */
-        .social-media {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .social-media a {
-            color: #00ABE4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .social-media a:hover {
-            color: #2c3e50;
-        }
-
-        /* Footer Section */
-        .footer {
-            background: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-            clear: both;
-        }
-
-        /* List Items */
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 10px 0;
-            padding: 10px;
-            background: #E9F1FA;
-            border-radius: 8px;
-            transition: background 0.3s;
-        }
-
-        li:hover {
-            background: #d4f0fc;
-        }
-
-        /* Image Styling */
-        .section-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 15px;
-            margin: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mamello Lepola - Profile</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #f0f8ff 0%, #e0f7fa 100%);
+      color: #222;
+    }
+    header, footer {
+      background-color: skyblue;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+      padding: 0.3em 0.7em;
+      border-radius: 4px;
+    }
+    nav a:hover { background: #4fc3f7; color: #003366; }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+      animation: fadeIn 1s;
+    }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(40px);} to{opacity:1;transform:none;} }
+    h2 {
+      color: #0077b6;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #87ceeb;
+      padding-bottom: 0.3rem;
+      letter-spacing: 1px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #87ceeb;
+      object-fit: cover;
+      box-shadow: 0 4px 16px rgba(0,191,255,0.13);
+      background: #e0f7fa;
+    }
+    .profile-text {
+      flex: 1;
+      min-width: 250px;
+      font-size: 1.1rem;
+    }
+    /* Responsive */
+    @media (max-width: 700px) {
+      .profile { flex-direction: column; text-align: center; }
+      main { padding: 1rem; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <div class="header">
-        <img src="C:\Users\STUDENTS\Documents\web tech\Screenshot 2025-03-18 094609.png"alt="IWB Logo" class="logo">
-        <h1>IWB - Electronic Recycling</h1>
-    </div>
-
-    <!-- Banner Section -->
-    <div class="banner">
-        <a href="software-tools.html">Discover Our New Software Tools!</a>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Our Services</h2>
-            <img src="C:\Users\STUDENTS\Documents\web tech\Car Wash and Detailing Banner (4).png" alt="E-Waste Recycling Process" class="section-image" alt= "Blue Brown Corporate Online Business Webinar Banner.png" style= width:80%; height:auto;">
-            <ul>
-                <li>RAM Recycling</li>
-                <li>Hard Drive Recycling</li>
-                <li>Motherboard Component Recycling</li>
-            </ul>
-        </section>
-
-        <!-- Contact Information Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@iwb.com">info@iwb.com</a></p>
-            <p>Phone: +266 59673965</p>
-            <p>Address: Maseru, Lesotho</p>
-            <div class="social-media">
-                <a href="https://facebook.com/iwb" target="_blank">Facebook</a>
-                <a href="https://twitter.com/iwb" target="_blank">Twitter</a>
-                <a href="https://instagram.com/iwb" target="_blank">Instagram</a>
-            </div>
-        </section>
-
-        <!-- Stakeholders Section -->
-        <section id="stakeholders">
-            <h2>Our Stakeholders</h2>
-            <ul>
-                <li><a href="Kenneth - Co-Founder of IWB.html">Co-Founder Kenneth</a></li>
-                <li><a href="Shadrack - CEO of IWB.html">CEO Shadrack</a></li>
-            <!-- Software Tools Section-->
-
-  <section class="sections" id="software-tools">
-<h2>Software Tools for Data Recovery and Destruction</h2>
-<p>Our new tools offer effecient data recovery and secure destruction solutions:<p/>
-<ul>
-<li>R-Studio Data Recovery</li>
-<li>TestDisk & PhotoRec</li>
-<li>Disk Drill</li>
-<li>EaseUS Data Recovery</li>
-</ul>
-</section>
-
-        
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>&copy; 2025 IWB - Electronic Recycling. All rights reserved.</p>
-    </div>
-
-    <script src="script.js"></script>
+  <header>
+    <h1>Mamello Lepola</h1>
+    <nav>
+      <a href="index.html">Profile</a>
+      <a href="skills.html">Skills</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="projects.html">Projects</a>
+      <a href="social-proof.html">Social Proof</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Profile</h2>
+      <div class="profile">
+        <!-- "C:\Users\STUDENTS\Desktop\Mamello\Lepola\IMG-20240423-WA0009.jpg" -->
+        <img src="https://github.com/LEPOLA-DEL/gracelepola/blob/main/IMG-20240423-WA0009.jpg?raw=true" alt="Mamello Lepola" />
+        <div class="profile-text">
+          <p>Hello! I'm <strong>Mamello Lepola</strong>, a passionate Broadcasting and Journalism student with a creative spark for storytelling and digital media. I thrive on transforming ideas into engaging stories-whether through the written word, video, or interactive websites.</p>
+          <p>My journey blends traditional journalism skills with modern web technology. I enjoy reporting, interviewing, editing, and designing, and I’m always eager to learn new ways to connect with audiences. Welcome to my portfolio!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mamello Lepola. All rights reserved.</p>
+  </footer>
 </body>
 </html>
